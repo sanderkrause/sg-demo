@@ -87,10 +87,10 @@
                     Sunday: <strong>Closed</strong>
                 </li>
             </ul>
-            <p>At this moment, we are <strong>Open</strong></p>
+            <p>At this moment, we are <strong>{{ $openText }}</strong></p>
         </div>
         <div class="col-lg-6">
-            <!-- Put the damn calender stuff here -->
+            <!-- TODO date picker -->
         </div>
     </div>
     <!-- /.row -->
@@ -101,7 +101,7 @@
 <footer class="py-5 bg-dark">
     <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Sander Krause - <a
-                href="//madebysander.nl">MadeBySander</a>
+                href="https://madebysander.nl">MadeBySander</a>
         </p>
     </div>
     <!-- /.container -->

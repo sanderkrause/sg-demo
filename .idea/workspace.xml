@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05358705-67af-4856-bc95-69e3c3e94490" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Services/OpeningHours.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/OpeningHoursTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/OpeningHours.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/OpeningHours.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/OpeningHoursTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/OpeningHoursTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +143,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -157,15 +156,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/resources/css" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.OpeningHoursTest.testIsOpenReturnsTrueWhenInsideOpeningHours">
+    <configuration name="OpeningHoursTest.testIsOpenReturnsTrueWhenInsideOpeningHours" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\OpeningHoursTest" file="$PROJECT_DIR$/tests/Unit/OpeningHoursTest.php" method="testIsOpenReturnsTrueWhenInsideOpeningHours" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.OpeningHoursTest.testIsOpenReturnsTrueWhenInsideOpeningHours" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -177,7 +186,7 @@
       <updated>1601232044228</updated>
       <workItem from="1601232045772" duration="64000" />
       <workItem from="1601232125204" duration="338000" />
-      <workItem from="1601232833453" duration="11528000" />
+      <workItem from="1601232833453" duration="20507000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1601232908613</created>
@@ -207,7 +216,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601314536357</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added OpeningHour model, migration and related seeder for initial data.">
+      <created>1601316901714</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601316901714</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added service class for checking opening hours. Fixed related Seeder. Added basic unit test.">
+      <created>1601324051813</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601324051813</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +242,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added basic template and necessary frontend files." />
     <MESSAGE value="Added OpeningHour model, migration and related seeder for initial data." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added OpeningHour model, migration and related seeder for initial data." />
+    <MESSAGE value="Added service class for checking opening hours. Fixed related Seeder. Added basic unit test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added service class for checking opening hours. Fixed related Seeder. Added basic unit test." />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="184" key="#Plugins" timestamp="1601237663293">
@@ -230,10 +254,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="646" y="225" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1601237322452" />
-    <state x="423" y="128" key="CommitChangelistDialog2" timestamp="1601314536202">
+    <state x="423" y="128" key="CommitChangelistDialog2" timestamp="1601324051672">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="423" y="128" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1601314536202" />
+    <state x="423" y="128" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1601324051672" />
     <state x="553" y="269" key="NewPhpClassDialog" timestamp="1601235933360">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

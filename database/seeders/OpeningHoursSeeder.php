@@ -22,49 +22,49 @@ class OpeningHoursSeeder extends Seeder
          */
         $table = DB::table('opening_hours');
         $table->insert([
-            'weekday' => 0,
+            'weekday' => 1,
             'open' => '08:00',
             'close' => '12:00',
             'repeat' => OpeningHour::WEEKLY,
         ]);
         $table->insert([
-            'weekday' => 0,
+            'weekday' => 1,
             'open' => '12:45',
             'close' => '16:00',
             'repeat' => OpeningHour::WEEKLY,
         ]);
         $table->insert([
-            'weekday' => 2,
+            'weekday' => 3,
             'open' => '08:00',
             'close' => '12:00',
             'repeat' => OpeningHour::WEEKLY,
         ]);
         $table->insert([
-            'weekday' => 2,
-            'open' => '12:45',
-            'close' => '16:00',
-            'repeat' => OpeningHour::WEEKLY,
-        ]);
-        $table->insert([
-            'weekday' => 4,
-            'open' => '08:00',
-            'close' => '12:00',
-            'repeat' => OpeningHour::WEEKLY,
-        ]);
-        $table->insert([
-            'weekday' => 4,
+            'weekday' => 3,
             'open' => '12:45',
             'close' => '16:00',
             'repeat' => OpeningHour::WEEKLY,
         ]);
         $table->insert([
             'weekday' => 5,
+            'open' => '08:00',
+            'close' => '12:00',
+            'repeat' => OpeningHour::WEEKLY,
+        ]);
+        $table->insert([
+            'weekday' => 5,
+            'open' => '12:45',
+            'close' => '16:00',
+            'repeat' => OpeningHour::WEEKLY,
+        ]);
+        $table->insert([
+            'weekday' => 6,
             'open' => '08:00',
             'close' => '12:00',
             'repeat' => OpeningHour::REPEAT_ODD_WEEKS,
         ]);
         $table->insert([
-            'weekday' => 5,
+            'weekday' => 6,
             'open' => '12:45',
             'close' => '16:00',
             'repeat' => OpeningHour::REPEAT_ODD_WEEKS,
