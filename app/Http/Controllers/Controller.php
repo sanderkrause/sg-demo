@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
@@ -16,6 +17,7 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     /**
+     * @param OpeningHours $openingHoursService
      * @return Application|Factory|View
      */
     public function home(OpeningHours $openingHoursService)
