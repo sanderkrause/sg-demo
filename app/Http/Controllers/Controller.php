@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\OpeningHours;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -17,8 +18,11 @@ class Controller extends BaseController
     /**
      * @return Application|Factory|View
      */
-    public function home()
+    public function home(OpeningHours $openingHoursService)
     {
-        return view('welcome');
+        $isOpen = $openingHoursService->isOpen(new \DateTime());
+        return view('welcome', [
+            'openText' => $isOpen ? 'Open' : 'Closed',
+        ]);
     }
 }

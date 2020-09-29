@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="05358705-67af-4856-bc95-69e3c3e94490" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/OpeningHours.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/OpeningHours.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/OpeningHoursTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/OpeningHoursTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +184,7 @@
       <updated>1601232044228</updated>
       <workItem from="1601232045772" duration="64000" />
       <workItem from="1601232125204" duration="338000" />
-      <workItem from="1601232833453" duration="20507000" />
+      <workItem from="1601232833453" duration="21441000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1601232908613</created>
@@ -230,7 +228,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601324051813</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added service class for checking opening hours. Fixed related Seeder. Added basic unit test.">
+      <created>1601377890263</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601377890263</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changed Readme from the default Laravel one.">
+      <created>1601378038792</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601378038792</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +255,8 @@
     <MESSAGE value="Added basic template and necessary frontend files." />
     <MESSAGE value="Added OpeningHour model, migration and related seeder for initial data." />
     <MESSAGE value="Added service class for checking opening hours. Fixed related Seeder. Added basic unit test." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added service class for checking opening hours. Fixed related Seeder. Added basic unit test." />
+    <MESSAGE value="Changed Readme from the default Laravel one." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Readme from the default Laravel one." />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="184" key="#Plugins" timestamp="1601237663293">
@@ -254,10 +267,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="646" y="225" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1601237322452" />
-    <state x="423" y="128" key="CommitChangelistDialog2" timestamp="1601324051672">
+    <state x="344" y="128" key="CommitChangelistDialog2" timestamp="1601378038692">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="423" y="128" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1601324051672" />
+    <state x="344" y="128" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1601378038692" />
     <state x="553" y="269" key="NewPhpClassDialog" timestamp="1601235933360">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -270,10 +283,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="349" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1601313218088" />
-    <state x="440" y="276" key="Vcs.Push.Dialog.v2" timestamp="1601232914623">
+    <state x="440" y="276" key="Vcs.Push.Dialog.v2" timestamp="1601378040071">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="440" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1601232914623" />
+    <state x="440" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1601378040071" />
     <state x="541" y="291" width="633" height="490" key="find.popup" timestamp="1601313536702">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
