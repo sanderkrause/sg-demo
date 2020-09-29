@@ -22,9 +22,14 @@ class Controller extends BaseController
      */
     public function home(OpeningHours $openingHoursService)
     {
-        $isOpen = $openingHoursService->isOpen(new \DateTime());
+        $now = new \DateTime();
+        $isOpen = $openingHoursService->isOpen($now);
+        if (!$isOpen) {
+            $nextOpen = $openingHoursService->nextOpen($now);
+        }
         return view('welcome', [
-            'openText' => $isOpen ? 'Open' : 'Closed',
+            'isOpen' => $isOpen,
+            'nextOpen' => $nextOpen ?? null,
         ]);
     }
 }

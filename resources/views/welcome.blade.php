@@ -62,32 +62,10 @@
     <!-- Features Section -->
     <div class="row">
         <div class="col-lg-6">
-            <h2>Come take a visit</h2>
-            <p>Our opening times this week are:</p>
-            <ul>
-                <li>
-                    Monday: 08:00 - 12:00, 12:45 - 16:00
-                </li>
-                <li>
-                    Tuesday: <strong>Closed</strong>
-                </li>
-                <li>
-                    Wednesday: 08:00 - 12:00, 12:45 - 16:00
-                </li>
-                <li>
-                    Thursday: <strong>Closed</strong>
-                </li>
-                <li>
-                    Friday: 08:00 - 12:00, 12:45 - 16:00
-                </li>
-                <li>
-                    Saturday: 08:00 - 12:00, 12:45 - 16:00
-                </li>
-                <li>
-                    Sunday: <strong>Closed</strong>
-                </li>
-            </ul>
-            <p>At this moment, we are <strong>{{ $openText }}</strong></p>
+            <p>At this moment, we are <strong>{{ $isOpen ? 'Open' : 'Closed' }}</strong></p>
+            @if (!$isOpen)
+                <p>We will be open again on {{ $nextOpen->format(DateTimeInterface::RFC7231) }}</p>
+            @endif
         </div>
         <div class="col-lg-6">
             <!-- TODO date picker -->
